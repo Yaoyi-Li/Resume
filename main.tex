@@ -1,0 +1,294 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+% \patchcmd{\makehead}
+%   {\hfil}
+%   {\hspace*{0.15\textwidth}}
+%   {}
+%   {}
+% \patchcmd{\makehead}
+%   {\setlength{\makeheaddetailswidth}{0.8\textwidth}}
+%   {\setlength{\makeheaddetailswidth}{0.67\textwidth}}
+%   {}
+%   {}
+% \patchcmd{\makehead}
+%   {\\[2.5em]}
+%   {\hfil\raisebox{-.7cm}{{\includegraphics[width=\@photowidth]{\@photo}}}\\[.5em]}
+%   {}
+%   {}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+ 
+\urlstyle{same}
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+% \usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\usepackage{xeCJK}
+ 
+% personal data
+\name{李}{杳奕}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{上海市闵行区东川路800号\, 电信楼群3号楼\, 东307室}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{+86}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted 
+\email{dsamuel@sjtu.edu.cn}                               % optional, remove / comment the line if not wanted
+%\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+\social[github]{https://github.com/Yaoyi-Li} 
+% \photo[84pt]{liyaoyi}              % optional, remove / comment the line if not wanted                % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\usepackage{graphicx}
+% \graphicspath{ {./} }
+\usepackage{wrapfig}
+
+%\usepackage{geometry}
+% \geometry{
+% a4paper,
+% total={170mm,257mm},
+% left=20mm,
+% top=20mm,
+ %}
+
+
+\begin{document}
+% \begin{CJK}{UTF8}{gbsn} 
+% to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{}
+
+
+
+\section{教育背景}
+
+\vspace{5pt}
+
+
+% \subsection{Academic Qualifications}
+
+% \vspace{5pt}
+
+
+
+
+{\cventry{2014.9至今}{工学博士在读}{上海交通大学，计算机科学与技术}{上海}{}{\textbf{研究方向}:  计算机视觉与机器学习, \textbf{导师}: 卢宏涛\,教授}}
+\vspace{10pt}
+
+{\cventry{2010.9-2014.7}{工学学士}{电子科技大学，计算机科学与技术}{四川-成都}{}{\textbf{排名}：2/241，\textbf{论文题目}: 基于分类的视频目标跟踪方法比较}}
+% \vspace{4mm}
+
+% \item{\cventry{2013-2014}{Nik-Ahang Pre-University}{Pre-University course (college like)}{Esfahan-Iran}{\textit{}}{ }{\textbf{Field}: Mathematics $\&$ Physics }}
+% \vspace{4mm}
+
+% \item{\cventry{2010--2013}{Nik-Ahang High School}{High school}{Esfahan-Iran}{\textit{}}{ }{\textbf{Field}: Mathematics $\&$ Physics }}
+% \vspace{4mm}
+
+
+
+
+
+% \vspace{2pt}
+
+% \subsection{Notable Projects}
+
+% \vspace{5pt}
+
+% \begin{itemize}
+
+
+
+% \item{\textbf{Fast Monte Carlo simulation in ion therapy }\textit{(Masters Thesis)}
+
+% \vspace{3pt}
+
+% \small{ We are simulating the interactions happening after an ion enters the human body in order to calculate the absorbed energy in different parts of the body,as it is important to have prescribed dose in the tumor (target area) and minimum dose surrounding healthy tissue. The most precise way to simulate and measure parameters is using Monte Carlo simulation because it can track the secondary particles that is produced after nuclear interactions. \\
+% %We aim at calibrating our code by comparing our calculations with the observed evolution of two ULXs with measured mass function (M 101 ULX-1, Liu et al. 2013, Nature, 503, 500; ULX P13 in NGC 7793, Motch et al. 2014, Nature, 514, 198).\\ 
+% %Currently I am working with my supervisor on bringing the M.Sc.-Project to a publishable form.\\
+% \textbf{Advisor}: Dr. Mairani,
+% }}
+% \vspace{9pt}
+% %\newpage
+% \item{\textbf{Serious game in neurofeedback therapy in children with autism} \textit{(Bachelor Thesis)}
+
+% \vspace{3pt}
+
+% \small{We searched about the games that can be used in neurofeedback therapy in different genres. Participants are required to learn controlling their own brain activity to control the game.Then we looked at the effect of these games on the autistic children and see If using a game in neurofeedback therapy made the whole process more interesting for kids.\\ 
+% \textbf{Advisor}: Dr. Jamasb,
+% }}
+
+% \vspace{12pt}
+
+% \end{itemize}
+%----------------------------------------------------------------------------------------
+%\section{Publications}
+
+%\vspace{6pt}
+ 
+%\begin{itemize}
+
+%\item{ \textbf{Multimessenger observations of a flaring blazar coincident with high-energy neutrino IceCube-170922A}\\
+%Science,2018
+%}
+%\vspace{6pt}
+%\item{\textbf{Very high energy particle acceleration in micro quasar jets: proof from SS 433}, HAWC GROUP\\
+%Nature, 2018
+%}
+%\vspace{6pt}
+
+%\end{itemize}
+
+
+
+%----------------
+
+%\section{Conferences and Presentations}
+%\vspace{6pt}
+
+%\begin{itemize}
+
+%\item{\cventry{October 2018}{Presented a talk about measuring galactic gamma ray diffuse emission}{HAWC Conference }{Heidelberg, Germany}{}{\vspace{3pt} \textbf{Topic:}  Gamma ray diffuse emission from inner Galaxy analysis with HAWC Data  \\ 
+%}}
+
+%\vspace{6pt}
+%\end{itemize}
+
+%------------------------------------------------------------------------------------------
+\section{工作经历}
+\vspace{6pt}
+
+% \begin{itemize}
+
+\cventry{2018.3-2019.6}{算法实习生}{上海交通大学-Versa联合实验室}{上海}{}{-\, 负责Versa公司图像分割、精细化抠图相关系列算法设计与研发；\\-\, 负责马卡龙玩图（原Versa）App及线上API中图像分割、抠图相关算法的维护；\\-\, 负责移动端轻量级抠图模型研发；\\-\, 进行Disentangle相关算法的预研。}
+
+% \end{itemize}
+
+%----------------------------------------------------------------------------------------
+\section{项目经历}
+
+\vspace{6pt}
+\cventry{2019.10-2019.12}{}{基于层次化不透明度传播的自然图像抠图方法}{\vspace{-10pt}}{}{本项目通过在神经网络中不同语义层混合采用全局及局部空间注意力机制，对trimap中的不透明度信息进行层次化传播，实现在低分辨率的语义层次与高分辨率的纹理层次中都能够实现有效的不透明度传播，更有效地顾及细节纹理信息。\\论文：\href{https://arxiv.org/pdf/2004.03249}{PDF}； alphamatting.com在线评测排行榜排名：\href{http://www.alphamatting.com/eval_25.php}{HOP Matting}}
+
+\vspace{10pt}
+\cventry{2019.7-2019.9}{}{基于引导上下文注意力的自然图像抠像方法}{\vspace{-10pt}}{}{本项目所设计的引导上下文注意力模块，在全卷积网络中模拟了基于相似性的传播抠图方法，将信息流从图像上下文直接传播到未知像素。在此模块中，底层图像特征用于作引导信息，根据该引导信息执行不透明度特征的传播。提出的方法将抠图过程看作引导性的图像补全任务，在输入图像的引导下，图像抠图任务被视为在trimap图像上的补全任务。\\论文收录于AAAI 2020: \href{https://www.arxiv.org/pdf/2001.04069.pdf}{PDF}; 开源项目：\href{https://www.github.com/Yaoyi-Li/GCA-Matting}{GCA-Matting}。}
+
+\vspace{10pt}
+\cventry{2018.11-2019.5}{}{移动端实时的弱标注输入图像抠图}{\vspace{-10pt}}{}{传统的图像抠图方法相对都比较耗时且需要准确标注的trimap图片作为辅助输入。本项目以近似正确的前景分割图片作为输入，提出参数化的归纳引导滤波器大幅减小基于神经网络的抠图运算复杂度，借助生成对抗训练，实现IPhone端的实时抠图。\\论文被ICME 2020接收: \href{https://arxiv.org/pdf/1905.06747.pdf}{PDF}; 1项专利申请中。}
+
+\vspace{10pt}
+\cventry{2018.4-2019.11}{}{解耦合表示下的多属性转移}{\vspace{-10pt}}{}{本项目将图像投影到隐单元以分解不同属性之间的信息，从而构造出解耦合表示。通过设计基于生成对抗网络的循环重建流程，交换指定属性隐单元以交换生成图像外观属性表现，同时保留属性内的风格多样性。算法模型所提供的功能使得用户可以选定一些特定的属性，通过对图像的属性编码的交换，实现对图像的属性交换。\\
+论文收录于AAAI 2019: \href{https://www.aaai.org/ojs/index.php/AAAI/article/view/4954/4827}{PDF}。}
+
+\vspace{10pt}
+\cventry{2018.4-2018.11}{}{弱标注输入图像抠图算法}{\vspace{-10pt}}{}{为解决传统抠像算法中需要用户交互生成trimap的问题，本项目以前景物体的分割图片作为辅助输入，在无trimap输入的流程下对指定目标进行前景物体抠图。辅助输入由实例分割方法自动生成，无需进行人工标注，可实现由输入原图到输出实例语义抠图的自动流程。\\
+项目输出的算法模型应用于公司App及线上API。}
+
+\vspace{10pt}
+\cventry{2016.12-2018.1}{}{约束传播中的多模态融合学习}{\vspace{-10pt}}{}{约束传播方法在受约束的聚类任务中表现出较好的性能。本项目提出的方法从观察到的约束信息和传播过程学习多模态融合，其可以处理任何数量的模态而无需任何先验知识的每种模态，将融合学习和约束传播合并为一个统一问题，并通过约束约束二次优化求解。
+\\
+论文收录于Information Sciences: \href{https://www.sciencedirect.com/science/article/pii/S0020025518304651}{URL}。}
+
+
+%-------------------------------------------------------------
+\section{论文列表}
+\vspace{6pt}
+\begin{itemize}
+
+
+\item{ \textbf{Yaoyi Li} and Hongtao Lu. Natural Image Matting via Guided Contextual Attention. In AAAI, 2020  (CCF-A).
+}
+\vspace{6pt}
+\item{ \textbf{Yaoyi Li}, Jianfu Zhang, Weijie Zhao, Weihao Jiang and Hongtao Lu. Inductive Guided Filter: Real-time Deep Image Matting with Weakly Annotated Masks on Mobile Devices. Accepted by ICME, 2020  (CCF-B, oral).
+}
+\vspace{6pt}
+\item{ \textbf{Yaoyi Li} and Hongtao Lu. On Multi-modal Fusion Learning in constraint propagation. Information Sciences 462: 204-217, 2018 (CCF-B).
+}
+\vspace{6pt}
+\item{ \textbf{Yaoyi Li} , Junxuan Chen, Yiru Zhao, and Hongtao Lu. Adaptive affinity matrix for unsupervised metric learning. In ICME, 2016. (CCF-B, oral)}
+\vspace{6pt}
+\item{ 	Jianfu Zhang, Yuanyuan Huang, \textbf{Yaoyi Li}, Weijie Zhao and Liqing Zhang.
+Multi-Attribute Transfer via Disentangled Representation. In AAAI, 2019. (CCF-A)}
+\vspace{6pt}
+\item{ Jianfu Zhang, Li Niu, Dexin Yang, Liwei Kang, \textbf{Yaoyi Li}, Weijie Zhao and Liqing Zhang.
+GAIN: Gradient Augmented Inpainting Network for Irregular Holes. In ACM Multimedia, 2019 (CCF-A)}
+\vspace{6pt}
+\item{Zhenru Li, \textbf{Yaoyi Li} and Hongtao Lu.
+Improve Image Captioning by Self-attention. In ICONIP, 2019. (CCF-C)}
+\vspace{6pt}
+\item{ 	Junxuan Chen, \textbf{Yaoyi Li} and Hongtao Lu.
+Online self-organizing hashing. In ICME, 2016 (CCF-B)}
+\vspace{6pt}
+\item{Yiru Zhao, \textbf{Yaoyi Li}, Zhiwen Shao and Hongtao Lu.
+LSOD: Local Sparse Orthogonal Descriptor for Image Matching. In ACM Multimedia, 2016 (CCF-A)}
+
+\end{itemize}
+
+% \end{itemize}
+%-----------------------------------------------------------------------------------
+\section{获奖情况}
+\vspace{6pt}
+
+\cvlistitem{2018.1 \, \,上海交通大学\,\, 卓越助教奖}
+\cvlistitem{2016.11 \,上海交通大学\,\, 优秀奖学金}
+\cvlistitem{2015.11 \,光华奖学金}
+\cvlistitem{2014.1 \, \,四川省优秀毕业生}
+\cvlistitem{2013.11 \,国家奖学金}
+\cvlistitem{2012.11 \,电子科技大学\,\, 人民特等奖学金}
+\cvlistitem{2011.11 \,国家奖学金}
+%-------------------------------------------------------
+
+\section{助教经历}
+\vspace{6pt}
+
+% \begin{itemize}
+
+\cvlistitem{2018.9-2019.1 \, 上海交通大学\, 数字图像处理\, 助教}
+\cvlistitem{2017.9-2018.1 \, 上海交通大学\, 数字图像处理\, 助教}
+\cvlistitem{2016.9-2017.1 \, 上海交通大学\, 数字图像处理\, 助教}
+\cvlistitem{2015.9-2016.1 \, 上海交通大学\, 数字图像处理\, 助教}
+\cvlistitem{2015.3-2015.6 \, 上海交通大学\, C++程序设计\, 助教}
+\cvlistitem{2014.9-2015.1 \, 上海交通大学\, 数据结构\, 助教}
+% \end{CJK}
+
+\end{document}
+
+
+
